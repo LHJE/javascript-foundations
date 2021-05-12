@@ -21,14 +21,18 @@ describe('Hobbit', function() {
 
   it('should be able to have a different name', function() {
     // create a variable hobbit whose value is an instance of the Hobbit class (pass in your name as an argument)
+    var luke = new Hobbit('Luke')
 
     // assert that hobbit.name is equal to your name
+    assert.equal(luke.name, 'Luke')
   });
 
   it('should start out 0 years old', function() {
     // create a variable hobbit whose value is an instance of the Hobbit class (pass in whatever name you want)
+    var luke = new Hobbit('Luke')
 
     // assert that hobbit.age is 0
+    assert.equal(luke.age, 0)
   });
 
   it('should gain 1 year after every birthday', function() {

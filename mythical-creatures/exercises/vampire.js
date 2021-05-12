@@ -5,6 +5,9 @@ class Vampire {
     this.thirsty = true
   }
 
+  drink() {
+    this.thirsty = false;
+  }
 
 }
 

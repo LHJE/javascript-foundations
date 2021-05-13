@@ -16,6 +16,14 @@ class Werewolf {
 			this.wolf = false;
 		}
 	}
+
+	eat(victim){
+		if (this.hungry) {
+			return `Yum! ${victim.name} was delicious!`
+		} else {
+			return 'Not Hungry'
+		}
+	}
 }
 
 module.exports = Werewolf;

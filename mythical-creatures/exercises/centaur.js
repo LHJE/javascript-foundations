@@ -10,19 +10,27 @@ class Centaur {
 	shoot(){
 		this.actions += 1;
 		this.crankyCheck();
-		return 'Twang!!!';
+		if (this.cranky) {
+			return 'NO!';
+		} else {
+			return 'Twang!!!';
+		};
 	}
 
 	run(){
 		this.actions += 1;
 		this.crankyCheck();
-		return 'Clop clop clop clop!!!';
+		if (this.cranky) {
+			return 'NO!';
+		} else {
+			return 'Clop clop clop clop!!!';
+		};
 	}
 
 	crankyCheck(){
 		if (this.actions >= 3) {
-			this.cranky = true
-		}
+			this.cranky = true;
+		};
 	}
 }
 module.exports = Centaur;

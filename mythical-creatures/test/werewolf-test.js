@@ -69,9 +69,15 @@ describe('Werewolf', function() {
     assert.equal(werewolf.hungry, false);
   });
 
-  it.skip('should become hungry after changing into werewolf form', function() {
-    // your code here
-    x
+  it('should become hungry after changing into werewolf form', function() {
+    var werewolf = new Werewolf('Lousia');
+
+    assert.equal(werewolf.hungry, false);
+
+    werewolf.transform();
+
+    assert.equal(werewolf.hungry, true);
+
   });
 
   it.skip('should be able to eat(victim) once hungry', function() {

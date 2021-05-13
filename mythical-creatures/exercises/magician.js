@@ -13,7 +13,11 @@ class Magician {
 	}
 
 	cast(){
-		return 'PULL RABBIT FROM TOP HAT'
+		if(this.topHat){
+			return 'PULL RABBIT FROM TOP HAT'
+		} else {
+			return 'PULL DOVE FROM SLEEVE'
+		}
 	}
 }
 

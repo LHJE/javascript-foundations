@@ -7,6 +7,7 @@ class Pirate {
 	}
 
 	robShip(){
+		this.booty += 100
 		return 'YAARRR!'
 	}
 }

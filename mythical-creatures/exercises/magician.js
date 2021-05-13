@@ -1,9 +1,13 @@
 class Magician {
 	constructor(data) {
-		this.name = data.name;
 		this.confident = false;
 		this.spellsCast = 0;
-		if(data.topHat === undefined ){
+		if(data === undefined || data.name === undefined ){
+			this.name = "Jackie Chan";
+		} else {
+			this.name = data.name;
+		};
+		if(data === undefined || data.topHat === undefined ){
 			this.topHat = true;
 		} else {
 			this.topHat = data.topHat;

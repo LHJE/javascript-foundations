@@ -1,7 +1,11 @@
 class Magician {
 	constructor(data) {
 		this.name = data.name;
-		this.topHat = true;
+		if(data.topHat === undefined ){
+			this.topHat = true;
+		} else {
+			this.topHat = data.topHat;
+		}
 	}
 }
 

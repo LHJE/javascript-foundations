@@ -7,6 +7,10 @@ class Magician {
 			this.topHat = data.topHat;
 		}
 	}
+
+	incantation(spell){
+		return spell.toUpperCase() + "!"
+	}
 }
 
 module.exports = Magician;

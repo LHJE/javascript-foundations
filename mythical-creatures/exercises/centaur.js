@@ -11,26 +11,28 @@ class Centaur {
 	shoot(){
 		this.actions += 1;
 		this.crankyCheck();
-		if (this.cranky || this.layingDown) {
-			return 'NO!';
-		} else {
-			return 'Twang!!!';
-		};
+		return this.react('Twang!!!');
 	}
 
 	run(){
 		this.actions += 1;
 		this.crankyCheck();
+		return this.react('Clop clop clop clop!!!');
+	}
+
+	react(reaction){
 		if (this.cranky || this.layingDown) {
 			return 'NO!';
 		} else {
-			return 'Clop clop clop clop!!!';
+			return reaction;
 		};
 	}
 
 	sleep(){
 		if (this.layingDown) {
-			return 'ZZZZ'
+			this.cranky = false;
+			this.actions = 0
+			return 'ZZZZ';
 		} else {
 			return 'NO!';
 		};

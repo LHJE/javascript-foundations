@@ -27,6 +27,10 @@ class Centaur {
 		};
 	}
 
+	sleep(){
+		return 'NO!';
+	}
+
 	crankyCheck(){
 		if (this.actions >= 3) {
 			this.cranky = true;

@@ -26,6 +26,14 @@ class Magician {
 		};
 	}
 
+	performShowStopper(){
+		if(this.confident){
+			return 'WOW! The magician totally just sawed that person in half!'
+		} else {
+			return 'Oh no! Practice more before attempting this trick!'
+		};
+	}
+
 }
 
 module.exports = Magician;

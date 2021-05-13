@@ -6,6 +6,7 @@ class Medusa {
 
 	stare(person){
 		person.stoned = true;
+		this.statues.push(person)
 	}
 }
 

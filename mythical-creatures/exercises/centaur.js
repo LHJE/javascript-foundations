@@ -29,7 +29,11 @@ class Centaur {
 	}
 
 	sleep(){
-		return 'NO!';
+		if (this.layingDown) {
+			return 'ZZZZ'
+		} else {
+			return 'NO!';
+		};
 	}
 
 	layDown(){

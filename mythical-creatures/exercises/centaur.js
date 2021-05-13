@@ -11,7 +11,7 @@ class Centaur {
 	shoot(){
 		this.actions += 1;
 		this.crankyCheck();
-		if (this.cranky) {
+		if (this.cranky || this.layingDown) {
 			return 'NO!';
 		} else {
 			return 'Twang!!!';
@@ -21,7 +21,7 @@ class Centaur {
 	run(){
 		this.actions += 1;
 		this.crankyCheck();
-		if (this.cranky) {
+		if (this.cranky || this.layingDown) {
 			return 'NO!';
 		} else {
 			return 'Clop clop clop clop!!!';

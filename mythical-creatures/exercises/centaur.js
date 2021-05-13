@@ -3,6 +3,7 @@ class Centaur {
 		this.name = data.name;
 		this.breed = data.type;
 		this.cranky = false;
+		this.standing = true;
 	}
 
 	shoot(){

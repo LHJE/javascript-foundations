@@ -11,6 +11,10 @@ class Magician {
 	incantation(spell){
 		return spell.toUpperCase() + "!"
 	}
+
+	cast(){
+		return 'PULL RABBIT FROM TOP HAT'
+	}
 }
 
 module.exports = Magician;

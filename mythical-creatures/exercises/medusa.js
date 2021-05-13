@@ -7,6 +7,9 @@ class Medusa {
 	stare(person){
 		person.stoned = true;
 		this.statues.push(person)
+		if(this.statues.length > 3){
+			this.statues.shift().stoned = false;
+		}
 	}
 }
 

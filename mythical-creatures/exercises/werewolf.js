@@ -20,7 +20,9 @@ class Werewolf {
 
 	eat(victim){
 		if (this.hungry) {
+			this.transform()
 			return `Yum! ${victim.name} was delicious!`
+
 		} else {
 			return 'Not Hungry'
 		}

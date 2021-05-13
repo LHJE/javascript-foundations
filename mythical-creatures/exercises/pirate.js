@@ -1,6 +1,7 @@
 class Pirate {
-	constructor(name) {
+	constructor(name, job = "scallywag") {
 		this.name = name
+		this.job = job
 	}
 }
 

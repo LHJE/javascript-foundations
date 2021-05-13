@@ -1,6 +1,7 @@
 class Magician {
 	constructor(data) {
 		this.name = data.name;
+		this.topHat = true;
 	}
 }
 

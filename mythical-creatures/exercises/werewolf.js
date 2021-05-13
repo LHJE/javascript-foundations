@@ -6,8 +6,13 @@ class Werewolf {
 	}
 
 	transform(){
-		this.human = false;
-		this.wolf = true;
+		if(this.human){
+			this.human = false;
+			this.wolf = true;
+		} else {
+			this.human = true;
+			this.wolf = false;
+		}
 	}
 }
 

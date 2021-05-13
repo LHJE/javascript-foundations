@@ -20,6 +20,12 @@ class Centaur {
 		return this.react('Clop clop clop clop!!!');
 	}
 
+	crankyCheck(){
+		if (this.actions >= 3) {
+			this.cranky = true;
+		};
+	}
+
 	react(reaction){
 		if (this.cranky || this.layingDown) {
 			return 'NO!';
@@ -48,10 +54,15 @@ class Centaur {
 		this.layingDown = false;
 	}
 
-	crankyCheck(){
-		if (this.actions >= 3) {
-			this.cranky = true;
-		};
+	drinkPotion(){
+		if (this.layingDown) {
+			return 'Not while I\'m laying down!'
+		} else if (!this.cranky) {
+			this.cranky = true
+		} else {
+			this.actions = 0
+			this.cranky = false
+		}
 	}
 }
 module.exports = Centaur;

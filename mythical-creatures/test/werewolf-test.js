@@ -64,27 +64,34 @@ describe('Werewolf', function() {
   });
 
   it('should start off not hungry', function() {
-    // your code here
+    var werewolf = new Werewolf('Lousia');
+
+    assert.equal(werewolf.hungry, false);
   });
 
-  it('should become hungry after changing into werewolf form', function() {
+  it.skip('should become hungry after changing into werewolf form', function() {
     // your code here
+    x
   });
 
-  it('should be able to eat(victim) once hungry', function() {
+  it.skip('should be able to eat(victim) once hungry', function() {
     // your code here
+    x
   });
 
-  it('should not be hungry after changing back to human form', function() {
+  it.skip('should not be hungry after changing back to human form', function() {
     // your code here
+    x
   });
 
-  it('should transform back to human form after eating', function() {
+  it.skip('should transform back to human form after eating', function() {
     // your code here
+    x
   });
 
-  it('should not be able to eat a victim while in human form', function() {
+  it.skip('should not be able to eat a victim while in human form', function() {
     // your code here
+    x
   });
 });
 

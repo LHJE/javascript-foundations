@@ -27,6 +27,9 @@ class Fairy {
 		if(this.disposition === 'Vengeful'){
 			this.humanWards.push(infant);
 			infant.disposition = 'Malicious';
+			if(this.humanWards.length > 2){
+				this.disposition = 'Good natured';
+			}
 		} else {
 			return infant;
 		};

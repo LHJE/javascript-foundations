@@ -12,11 +12,15 @@ class Sphinx {
 	}
 
 	attemptAnswer(guess){
+		var startingLength = this.riddles.length
 		for (let i = 0; i < this.riddles.length; i++){
 			if (guess === this.riddles[i]['answer']) {
 				this.riddles.splice(i, 1);
 				return 'That wasn\'t that hard, I bet you don\'t get the next one';
 			};
+		};
+		if (startingLength === this.riddles.length) {
+			this.heroesEaten++;
 		};
 	}
 }

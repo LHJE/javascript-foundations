@@ -16,7 +16,7 @@ $ npm test wizarding-arrays/test/potions-test.js
 
 ### Skipped Tests
 
-Most of the tests are skipped. When you see `it.skip('should be a function', () => {` in a test, it means that test has been skipped. They are skipped for a good reason - that way, when you run the test suite for the first time, you don't see tons of errors screaming at you in the terminal.
+Most of the tests are skipped. When you see `it('should be a function', () => {` in a test, it means that test has been skipped. They are skipped for a good reason - that way, when you run the test suite for the first time, you don't see tons of errors screaming at you in the terminal.
 
 Unskip one test at a time and concentrate on making that one test pass. Unskip the test by removing the `.skip` from the first line of the test so that it looks like: `it('should be a function', () => {`. Run the test to see what kind of error you are getting, and then implement the code to make the test pass!
 

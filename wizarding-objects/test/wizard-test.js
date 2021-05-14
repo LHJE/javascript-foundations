@@ -5,13 +5,13 @@ const Wizard = require('../lib/wizard')
 
 describe('Wizard', () => {
 
-  it.skip('should be a function', () => {
+  it('should be a function', () => {
     const wizard = new Wizard();
 
     assert.isFunction(wizard);
   });
 
-  it.skip('should have a name', () => {
+  it('should have a name', () => {
     const hermyown = new Wizard('Hermione');
     const wonwon = new Wizard('Ron');
 
@@ -19,7 +19,7 @@ describe('Wizard', () => {
     assert.equal(wonwon.name, 'Ron');
   });
 
-  it.skip('should have a pet', () => {
+  it('should have a pet', () => {
     const wizard = new Wizard('Hermione');
     const pet = new Pet('Crookshanks', 'cat');
 
@@ -29,7 +29,7 @@ describe('Wizard', () => {
     assert.equal(wizard.pets[0], pet);
   });
 
-  it.skip('should be able to have many pets', () => {
+  it('should be able to have many pets', () => {
     const wizard = new Wizard('Hermione');
  
     const pet1 = new Pet('Crookshanks', 'cat');
@@ -43,7 +43,7 @@ describe('Wizard', () => {
     assert.equal(wizard.pets[1], pet2);
   });
 
-  it.skip('should list pets as a string', () => {
+  it('should list pets as a string', () => {
     const wizard = new Wizard('Hermione');
     
     const pet1 = new Pet('Crookshanks', 'cat');
@@ -57,7 +57,7 @@ describe('Wizard', () => {
     assert.equal(hermionesPets, "A cat named Crookshanks; an owl named Hedwig.");
   });
 
-  it.skip('should have a wand', () => {
+  it('should have a wand', () => {
     const wizard = new Wizard('Hermione');
     const wand = new Wand("Cherry", 12, "Unicorn Hair");
  
@@ -66,7 +66,7 @@ describe('Wizard', () => {
     assert.equal(wizard.wand, wand);
   });
 
-  it.skip('should cast a spell', () => {
+  it('should cast a spell', () => {
     const wizard = new Wizard('Hermione');
     const wand = new Wand("Cherry", 12, "Unicorn Hair");
    

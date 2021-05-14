@@ -12,6 +12,10 @@ class Fairy {
 	believe(){
 		this.dust += 10;
 	}
+
+	makeDresses(flowers){
+    this.clothes.dresses = this.clothes.dresses.concat(flowers);
+	}
 }
 
 module.exports = Fairy;

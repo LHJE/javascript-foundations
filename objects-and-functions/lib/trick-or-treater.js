@@ -14,6 +14,10 @@ class TrickOrTreater {
 
 	eat(){
 		this.bag.candies.pop();
+		this.countCandies--;
+		if (this.countCandies == 0) {
+			this.hasCandy = false;
+		}
 	}
 }
 

@@ -8,11 +8,15 @@ class GolfCourse {
 	}
 
 	checkInGroup(group){
-		for (var i = 0; i < group.length; i++) {
-			this.currentlyPlaying.unshift(group[i].name);
+		if (this.openings - group.length > 0) {
+			for (var i = 0; i < group.length; i++) {
+				this.currentlyPlaying.unshift(group[i].name);
+			};
+			this.openings -= group.length;
+			return 'You\'re checked in. Have fun!'
+		} else {
+			return 'Sorry, we are currently booked! Please come back later.';
 		}
-		this.currentlyPlaying
-		this.openings -= group.length;
 	}
 }
 module.exports = GolfCourse;

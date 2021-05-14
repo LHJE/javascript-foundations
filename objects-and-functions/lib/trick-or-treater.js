@@ -12,6 +12,9 @@ class TrickOrTreater {
 		this.countCandies++;
 	}
 
+	eat(){
+		this.bag.candies.pop();
+	}
 }
 
 module.exports = TrickOrTreater;

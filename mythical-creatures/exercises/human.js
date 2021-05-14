@@ -5,8 +5,7 @@ class Human {
 	}
 
 	noticesOgre(){
-		if (this.encounterCounter >= 3) {
-			this.encounterCounter = 0
+		if (this.encounterCounter % 3 === 0 && this.encounterCounter != 0) {
 			return true;
 		} else {
 			return false;

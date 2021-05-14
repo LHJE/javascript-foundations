@@ -12,11 +12,17 @@ class Orge {
 		};
 		if (this.swings > 1) {
 			human.knockedOut = true;
-		}
+		};
 	}
 
 	swingAt(human){
 		this.swings++;
+	}
+
+	apologize(human){
+		if (human.knockedOut) {
+			human.knockedOut = false;
+		};
 	}
 }
 

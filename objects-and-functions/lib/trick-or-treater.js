@@ -5,7 +5,9 @@ class TrickOrTreater {
 		this.hasCandy = false;
 	}
 
-
+	putCandyInBag(candy){
+		this.bag.fill(candy);
+	}
 }
 
 module.exports = TrickOrTreater;

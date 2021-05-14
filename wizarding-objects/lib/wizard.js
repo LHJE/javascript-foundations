@@ -4,6 +4,7 @@ class Wizard {
 		this.pets = [];
 		this.petsCount = 0;
 		this.petSentence = '';
+		this.wand = null;
 	}
 
 	adoptPet(pet){
@@ -25,6 +26,14 @@ class Wizard {
 		} else {
 			this.petSentence += `; A ${pets[i].type} named ${pets[i].name}`;
 		}
+	}
+
+	getWand(wand){
+		this.wand = wand;
+	}
+
+	castSpell(spell) {
+		return this.wand.cast(spell);
 	}
 
 }

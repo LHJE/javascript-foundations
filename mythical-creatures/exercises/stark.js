@@ -1,6 +1,7 @@
 class Stark {
-	constructor(name) {
+	constructor(name, location = 'Winterfell') {
 		this.name = name;
+		this.location = location;
 	}
 }
 

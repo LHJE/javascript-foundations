@@ -1,6 +1,7 @@
 class Direwolf {
-	constructor(name) {
-		this.name = name
+	constructor(name, home = 'Beyond the Wall') {
+		this.name = name;
+		this.home = home;
 	}
 }
 

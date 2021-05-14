@@ -10,6 +10,16 @@ class Bag {
 		this.count++;
 		this.empty = false;
 	}
+
+	contains(candy){
+		for (var i = 0; i < this.candies.length; i++) {
+			if (candy === this.candies[i].type) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
 }
 
 module.exports = Bag;

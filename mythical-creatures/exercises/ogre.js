@@ -6,11 +6,13 @@ class Orge {
 	}
 
 	encounter(human){
-		
 		human.encounterCounter++;
 		if (human.noticesOgre()) {
 			this.swingAt(human);
 		};
+		if (this.swings > 1) {
+			human.knockedOut = true;
+		}
 	}
 
 	swingAt(human){

@@ -29,5 +29,18 @@ class Golfer {
 		}
 		return `I love the ${features.slice(5)} on this course!`
 	}
+
+	whatYaShoot(shots){
+		if (shots > 0) {
+			this.frustration += 20;
+			return 'Doh!';
+		} else if (shots === 0) {
+			this.frustration -= 10;
+			return 'Booyah!';
+		} else if (shots < 0) {
+			this.frustration = 0;
+			return 'I AM THE GREATEST GOLFER ALIVE!';
+		}
+	}
 }
 module.exports = Golfer;

@@ -21,5 +21,13 @@ class Golfer {
 	hitTheRange(){
 		this.confidence += 10;
 	}
+
+	marvel(golfCourse){
+		var features = ''
+		for (var i = 0; i < golfCourse.features.length; i++) {
+			features += " and " + golfCourse.features[i];
+		}
+		return `I love the ${features.slice(5)} on this course!`
+	}
 }
 module.exports = Golfer;

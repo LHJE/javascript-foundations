@@ -23,7 +23,11 @@ class Fairy {
 	}
 
 	replaceInfant(infant){
-		infant.disposition = 'Malicious';
+		if(this.disposition === 'Vengeful'){
+			infant.disposition = 'Malicious';
+		} else {
+			return infant;
+		};
 	}
 }
 

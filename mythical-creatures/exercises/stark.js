@@ -6,7 +6,11 @@ class Stark {
 	}
 
 	houseWords(){
-		return 'Winter is Coming';
+		if (this.safe) {
+			return 'The North Remembers';
+		} else {
+			return 'Winter is Coming';
+		};
 	}
 }
 

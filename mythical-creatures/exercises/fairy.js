@@ -7,6 +7,10 @@ class Fairy {
 	receiveBelief(){
 		this.dust += 1;
 	}
+
+	believe(){
+		this.dust += 10;
+	}
 }
 
 module.exports = Fairy;

@@ -4,6 +4,7 @@ class SkatePark {
 		this.yearFounded = data['year'];
 		this.style = data['type'];
 		this.features = data['features'];
+		this.occupants = [];
 		if (typeof(data['isPrivate']) === 'undefined') {
 			this.isPrivate = false;
 			this.cost = 0;

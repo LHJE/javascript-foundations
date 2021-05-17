@@ -16,6 +16,9 @@ class SkatePark {
 
 	admit(skater){
 		if (this.isPrivate) {
+			if (this.cost > skater.money) {
+				return `Sorry, you don't have enough money.`;
+			}
 			skater.money -= this.cost;
 			this.occupants.push(skater);
 			return `Welcome to ${this.name}, the cost will be $${this.cost}.00.`;
